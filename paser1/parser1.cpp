@@ -169,7 +169,7 @@ public:
             if (c < 'a' || c > 'z')
                 return false;
         }
-        // 예약어 "print"는 변수명으로 사용 불가
+        
         if (s == "print")
             return false;
         return true;
@@ -198,8 +198,7 @@ int main() {
 
     string line;
     while (true) {
-        // 프롬프트 출력 (필요시)
-        // cout << ">> ";
+
         if (!getline(cin, line))
             break;
         // 빈 줄이면 종료

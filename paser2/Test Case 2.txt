@@ -1,0 +1,72 @@
+Test Case 1
+
+integer a ; a = 3 + 5 ; print a ;
+
+ >> 8
+
+ Test Case 2
+
+integer a ; integer b ; a = 3 + 1 ; print a ; print b ;
+
+ >> 4 0
+
+ Test Case 3
+
+float a ; double b ; string c ; float d ; double e ; string f ; print a ; print b ; print c ; print d ; print e ; print f ;
+
+>> Syntax Error!
+
+ Test Case 4
+
+integer a ; integer b ; integer c ; integer d ; integer e ; a = 21 ; b = 18 ; c = 22 ; d = 17 ; e = 16 ; print a > b ; print b > c ; print c > d ; print d > e ; print e > a ; print a == c ; print b == d ;
+
+ >> Syntax Error!
+
+ Test Case 5
+
+integer i ; integer b ; integer e ; integer c ; integer d ; i = 0 ; b = 0 ; e = 10 ; c = 0 ; d = 0 ; while ( i < e ) do { i = i + 1 ; b = b + i ; c = c + b ; d = d + c ; } ; print b ; print c ; print d ;
+
+ >> 55 220 715
+
+ Test Case 6
+
+integer a ; integer b ; a = 1 ; b = 0 ; while ( a < 6 ) do { b = b + a * a ; a = a + 1 ; } ; print b ;
+
+ >> Syntax Error!
+
+ Test Case 7
+
+integer a ; integer b ; integer c ; integer d ; integer e ; integer f ; integer g ; a = 0 ; b = 1 ; c = 12 ; d = 0 ; e = 100 ; f = 6 ; g = 15 ; while ( a < c ) do { if ( a < f ) { b = b * 2 ; d = d + b ; } else { b = b + 1 ; if ( b > g ) { d = d - 3 ; } else { d = d + 2 ; } ; } ; a = a + 1 ; } ; if ( d > e ) { a = d - b ; b = a + 3 ; c = b + d ; print c ; } else { a = d + b ; b = a * 2 ; print b ; } ;
+
+>> 149
+
+Test Case 8
+
+integer a ; integer b ; integer c ; integer d ; integer e ; integer f ; integer g ; integer h ; integer i ; integer j ; integer z ; a = 0 ; b = 3 ; c = 0 ; d = 0 ; e = 1 ; f = 5 ; g = 0 ; h = 2 ; i = 0 ; j = 3 ; z = 0 ; if ( a < b ) { while ( c < b ) do { if ( d < f ) { while ( g < h ) do { if ( i == z ) { print g ; g = g + 1 ; i = i + 1 ; } else { print i ; i = i - 1 ; } ; } ; d = d + 1 ; c = c + 1 ; } else { print d ; print f ; } ; } ; } else { if ( j > a ) { print j ; } else { print a ; } ; } ; a = 0 ; b = 5 ; c = 0 ; d = 0 ; e = 0 ; f = 0 ; g = 0 ; h = 1 ; i = 2 ; j = 3 ; z = 0 ; if ( a < b ) { while ( c < b ) do { if ( d == z ) { print c ; d = d + 1 ; } else { print d ; d = d - 1 ; } ; c = c + 1 ; } ; } else { if ( h != z ) { print h ; while ( f < i ) do { print f ; f = f + 1 ; } ; } else { print j ; } ; } ;
+
+ >> 0 1 1 0 1 2 1 4 
+
+Test Case 9
+
+integer a ; integer b ; integer c ; integer d ; integer e ; integer f ; a = 5 ; b = 10 ; c = 15 ; d = 10 ; e = 5 ; f = 20 ; if ( a == e ) { print a ; } else { print b ; } ; if ( b != d ) { print c ; } else { print d ; } ; if ( c < f ) { print f ; } else { print c ; } ; if ( f > b ) { print f ; } else { print b ; } ; if ( d == b ) { print d ; } else { print a ; } ; if ( a != c ) { print b ; } else { print e ; } ; if ( f < c ) { print f ; } else { print c ; } ; if ( e > a ) { print e ; } else { print a ; } ;
+
+ >> 5 10 20 20 10 10 15 5
+
+ Test Case 10
+
+integer a ; integer b ; integer c ; integer d ; integer e ; integer f ; integer g ; integer h ; integer i ; integer j ; integer k ; integer l ; integer m ; integer n ; integer o ; integer p ; integer q ; integer r ; integer s ; integer t ; a = 1 ; b = 2 ; c = 3 ; d = 4 ; e = 5 ; f = 6 ; g = 7 ; h = 8 ; i = 9 ; j = 10 ; k = 11 ; l = 12 ; m = 13 ; n = 14 ; o = 15 ; p = 16 ; q = 17 ; r = 18 ; s = 19 ; t = 20 ; print a + b * c - d + ( e + f * g - ( h + i * j ) ) * 2 + ( k - l + m * n - o ) + p * q - r * s + t ; print ( ( ( a + b ) * ( c + d ) ) - ( e * ( f + g ) ) + ( h - i + j ) ) * ( k + l ) - m + n - o * ( p + q - r ) + s - t ; print a * b - c + d * e - f + ( g * h - i ) + j - ( k + l - m * n ) + o - ( p - q + r * s - t ) ; if ( a < b ) { print a + b * c - d + ( e + f ) * g - h + i ; } else { print j - k + l * m - n + ( o + p * q - r ) + s * t ; } ;
+
+ >> 17 -1030 -77 8
+
+--------------------------------------------------------------------------
+
+integer a ; a = 3 + 5 ; print a ;
+integer a ; integer b ; a = 3 + 1 ; print a ; print b ;
+float a ; double b ; string c ; float d ; double e ; string f ; print a ; print b ; print c ; print d ; print e ; print f ;
+integer a ; integer b ; integer c ; integer d ; integer e ; a = 21 ; b = 18 ; c = 22 ; d = 17 ; e = 16 ; print a > b ; print b > c ; print c > d ; print d > e ; print e > a ; print a == c ; print b == d ;
+integer i ; integer b ; integer e ; integer c ; integer d ; i = 0 ; b = 0 ; e = 10 ; c = 0 ; d = 0 ; while ( i < e ) do { i = i + 1 ; b = b + i ; c = c + b ; d = d + c ; } ; print b ; print c ; print d ;
+integer a ; integer b ; a = 1 ; b = 0 ; while ( a < 6 ) do { b = b + a * a ; a = a + 1 ; } ; print b ;
+integer a ; integer b ; integer c ; integer d ; integer e ; integer f ; integer g ; a = 0 ; b = 1 ; c = 12 ; d = 0 ; e = 100 ; f = 6 ; g = 15 ; while ( a < c ) do { if ( a < f ) { b = b * 2 ; d = d + b ; } else { b = b + 1 ; if ( b > g ) { d = d - 3 ; } else { d = d + 2 ; } ; } ; a = a + 1 ; } ; if ( d > e ) { a = d - b ; b = a + 3 ; c = b + d ; print c ; } else { a = d + b ; b = a * 2 ; print b ; } ;
+integer a ; integer b ; integer c ; integer d ; integer e ; integer f ; integer g ; integer h ; integer i ; integer j ; integer z ; a = 0 ; b = 3 ; c = 0 ; d = 0 ; e = 1 ; f = 5 ; g = 0 ; h = 2 ; i = 0 ; j = 3 ; z = 0 ; if ( a < b ) { while ( c < b ) do { if ( d < f ) { while ( g < h ) do { if ( i == z ) { print g ; g = g + 1 ; i = i + 1 ; } else { print i ; i = i - 1 ; } ; } ; d = d + 1 ; c = c + 1 ; } else { print d ; print f ; } ; } ; } else { if ( j > a ) { print j ; } else { print a ; } ; } ; a = 0 ; b = 5 ; c = 0 ; d = 0 ; e = 0 ; f = 0 ; g = 0 ; h = 1 ; i = 2 ; j = 3 ; z = 0 ; if ( a < b ) { while ( c < b ) do { if ( d == z ) { print c ; d = d + 1 ; } else { print d ; d = d - 1 ; } ; c = c + 1 ; } ; } else { if ( h != z ) { print h ; while ( f < i ) do { print f ; f = f + 1 ; } ; } else { print j ; } ; } ;
+integer a ; integer b ; integer c ; integer d ; integer e ; integer f ; a = 5 ; b = 10 ; c = 15 ; d = 10 ; e = 5 ; f = 20 ; if ( a == e ) { print a ; } else { print b ; } ; if ( b != d ) { print c ; } else { print d ; } ; if ( c < f ) { print f ; } else { print c ; } ; if ( f > b ) { print f ; } else { print b ; } ; if ( d == b ) { print d ; } else { print a ; } ; if ( a != c ) { print b ; } else { print e ; } ; if ( f < c ) { print f ; } else { print c ; } ; if ( e > a ) { print e ; } else { print a ; } ;
+integer a ; integer b ; integer c ; integer d ; integer e ; integer f ; integer g ; integer h ; integer i ; integer j ; integer k ; integer l ; integer m ; integer n ; integer o ; integer p ; integer q ; integer r ; integer s ; integer t ; a = 1 ; b = 2 ; c = 3 ; d = 4 ; e = 5 ; f = 6 ; g = 7 ; h = 8 ; i = 9 ; j = 10 ; k = 11 ; l = 12 ; m = 13 ; n = 14 ; o = 15 ; p = 16 ; q = 17 ; r = 18 ; s = 19 ; t = 20 ; print a + b * c - d + ( e + f * g - ( h + i * j ) ) * 2 + ( k - l + m * n - o ) + p * q - r * s + t ; print ( ( ( a + b ) * ( c + d ) ) - ( e * ( f + g ) ) + ( h - i + j ) ) * ( k + l ) - m + n - o * ( p + q - r ) + s - t ; print a * b - c + d * e - f + ( g * h - i ) + j - ( k + l - m * n ) + o - ( p - q + r * s - t ) ; if ( a < b ) { print a + b * c - d + ( e + f ) * g - h + i ; } else { print j - k + l * m - n + ( o + p * q - r ) + s * t ; } ;
